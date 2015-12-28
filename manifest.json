@@ -1,0 +1,36 @@
+{
+  "name": "Service Worker Demo",
+  "short_name": "Service Worker Demo",
+  "icons": [{
+        "src": "assets/images/icon.png",
+        "type": "image/png",
+        "sizes": "128x128"
+      }, {
+        "src": "assets/images/icon.png",
+        "type": "image/png",
+        "sizes": "152x152"
+      }, {
+        "src": "assets/images/icon.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }, {
+        "src": "assets/images/icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "assets/images/icon.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "assets/images/icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }],
+  "start_url": "/?homescreen=1",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#2196F3",
+  "theme_color": "#2196F3"
+}

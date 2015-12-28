@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang=en-GB>
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="A service worker demo.">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Service Worker Demo</title>
+    <link rel=manifest href=manifest.json>
+    <meta name=mobile-web-app-capable content=yes>
+    <meta name=application-name content="Service Worker Demo">
+    <link rel=icon sizes=192x192 href="assets/images/icon.png">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <meta name=apple-mobile-web-app-title content="Service Worker Demo">
+    <link rel=apple-touch-icon href="assets/images/icon.png">
+    <meta name=theme-color content="#2196F3">
+</head>
+<body>
+    <h1>Service Worker</h1>
+    <p>
+        A simple demo showing how to intercept network requests and handle offline states.
+        Disable the network in the developer tools to see the image display even when refreshed.
+    </p>
+    <img src="assets/images/icon.png" />
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                     .register('/sw.js')
+                     .then(function () { console.log("Service Worker Registered"); });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Service Worker Demo",
+  "launch_path": "/index.html",
+  "description": "Service Worker Demo",
+  "icons": {
+    "128": "assets/images/icon.png"
+  },
+  "developer": {
+    "name": "Cory Rylan",
+    "url": "http://coryrylan.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Service Worker Demo",
+      "description": "Service Worker Demo"
+    }
+  }
+}
